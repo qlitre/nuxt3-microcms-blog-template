@@ -1,0 +1,174 @@
+@charset "UTF-8";
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  color: #333;
+  font-size: 1.2rem;
+  font-family: neue-haas-grotesk-text, noto-sans-cjk-jp, sans-serif;
+  -webkit-text-size-adjust: 100%;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+a:link,
+a:visited,
+a:hover,
+a:active {
+  color: #d03c56;
+  text-decoration: none;
+}
+
+/* トップページ以外で使用するメインレイアウト */
+.main {
+  position: relative;
+  width: 720px;
+  margin: 0 auto 0;
+  padding: 112px 0;
+  color: #0d1a3c;
+}
+
+@media (max-width: 1024px) {
+  .main {
+    max-width: 600px;
+    position: relative;
+    color: #0d1a3c;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    padding-bottom: 50px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+
+/* Transition */
+.page-enter-from {
+  opacity: 0;
+  transform: translateY(-10px);
+}
+
+.page-enter-active,
+.page-leave-active {
+  transition: all 0.3s;
+}
+
+.page-enter,
+.page-leave-to {
+  opacity: 0;
+}
+
+/* 記事詳細のマークダウン */
+.markdown-body * {
+  margin-top: 0;
+  margin-bottom: 2rem;
+  line-height: 1.9;
+  font-size: 1.6rem;
+  font-weight: 500;
+}
+
+.markdown-body strong {
+  background-color: yellow;
+}
+
+.markdown-body img {
+  display: block;
+  max-width: 100%;
+  margin-top: 20px;
+  margin-bottom: 0px;
+  height: auto;
+  border: solid 1px #ccc;
+}
+
+@media (max-width: 1024px) {
+  .markdown-body img {
+    max-width: 100%;
+  }
+}
+
+.markdown-body p code {
+  background-color: #eee;
+  color: #333;
+  padding: 0.2em 0.4em;
+  font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+}
+
+.markdown-body pre {
+  line-height: 1.2;
+  background-color: #1D1F21;
+  padding: 2% 4%;
+  overflow-x: scroll;
+}
+
+.markdown-body pre * {
+  margin-bottom: 0;
+  line-height: 1.4;
+  font-weight: lighter;
+}
+
+.markdown-body blockquote {
+  padding: 15px;
+  border-left: 5px solid #ccc;
+  border-radius: 2px;
+}
+
+.markdown-body h1 {
+  font-size: 24px;
+  border-bottom: 1px solid #ccc;
+  font-weight: bold;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.markdown-body h2,
+.markdown-body h3 {
+  font-size: 20px;
+  margin-top: 30px;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.markdown-body h2 {
+  border-bottom: 1px solid #ccc;
+}
+
+.markdown-body .cp_embed_wrapper {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.markdown-body a {
+  color: #1266f1;
+}
+
+.markdown-body a:hover {
+  opacity: .5;
+}
+
+.markdown-body ul,
+.markdown-body ol {
+  padding-left: 1.5em;
+  margin: 1rem 0;
+  line-height: 1.7;
+}
+
+.markdown-body ul {
+  list-style-type: disc;
+}
+
+.markdown-body ol {
+  list-style-type: decimal;
+}
+
+.markdown-body ul li,
+.markdown-body ol li {
+  margin-bottom: 1rem;
+}
