@@ -1,6 +1,6 @@
 import type { IncomingMessage, ServerResponse } from 'http'
 import client from './client'
-import { Tag } from './types'
+import { Tag } from '../../types/blog'
 
 
 export default async (req: IncomingMessage, res: ServerResponse) => {

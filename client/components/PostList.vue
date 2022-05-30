@@ -1,7 +1,13 @@
 <script setup lang="ts">
+
+import { MicroCMSListResponse } from 'microcms-js-sdk';
+import { Post } from '../types/blog';
+import { PropType } from 'vue';
+
 const props = defineProps({
-    posts: Object
+    posts: Object as PropType<MicroCMSListResponse<Post>>
 })
+
 </script>
 
 <template>

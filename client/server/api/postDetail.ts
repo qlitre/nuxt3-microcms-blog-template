@@ -1,6 +1,6 @@
 import type { IncomingMessage, ServerResponse } from 'http'
 import client from './client'
-import { Post } from './types'
+import { Post } from '../../types/blog'
 import * as url from "url";
 
 

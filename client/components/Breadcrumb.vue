@@ -1,10 +1,13 @@
 <script setup lang="ts">
 
+import { Tag } from '../types/blog';
+import { PropType } from 'vue';
+
 const props = defineProps({
-  tag: Object,
+  tag: Object as PropType<Tag>
 })
 
-function hasTag(arg: object) {
+function hasTag(arg: Tag) {
   return Object.keys(arg).length > 0
 }
 

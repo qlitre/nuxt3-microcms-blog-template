@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import cheerio from 'cheerio';
+import * as cheerio from 'cheerio';
 import hljs from 'highlight.js'
 import 'highlight.js/styles/hybrid.css'
 
