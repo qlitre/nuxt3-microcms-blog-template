@@ -1,0 +1,27 @@
+@charset "UTF-8";
+/* src/assets/css/style.css */
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    color: #333;
+    font-size: 1.2rem;
+    font-family: neue-haas-grotesk-text, noto-sans-cjk-jp, sans-serif;
+    -webkit-text-size-adjust: 100%;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+a:link,
+a:visited,
+a:hover,
+a:active {
+    color: #d03c56;
+    text-decoration: none;
+}
