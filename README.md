@@ -1,42 +1,18 @@
-# Nuxt 3 Minimal Starter
 
-Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+Nuxt3 + microCMSのシンプルなブログテンプレートです。
 
-## Setup
+## 開発環境
+- windows 10 home
+- node.js v14.18.0
+- Nuxt 3.0.0
 
-Make sure to install the dependencies:
+## 実装機能
+- 記事一覧表示
+- 記事詳細表示
+- キーワード検索
+- ページング処理
+- タグ絞り込み
 
-```bash
-# yarn
-yarn install
 
-# npm
-npm install
-
-# pnpm
-pnpm install --shamefully-hoist
-```
-
-## Development Server
-
-Start the development server on http://localhost:3000
-
-```bash
-npm run dev
-```
-
-## Production
-
-Build the application for production:
-
-```bash
-npm run build
-```
-
-Locally preview production build:
-
-```bash
-npm run preview
-```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+## チュートリアル
+[【まとめ】Nuxt3とmicroCMSで作るブログ](https://qlitre-weblog.com/nuxt3-microcms-blog-matome)
